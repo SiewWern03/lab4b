@@ -15,22 +15,23 @@
     <div id="myElement">Original Text</div>
 
     <div id="myDIV">
-    <p>I am a myDIV.</p>
+        <p>I am a myDIV.</p>
     </div>
 
     <button id="myButton">Click me</button>
     <script>
+
     // a
     // var element = document.getElementById("myElement");
     // element.textContent = "Modified Text";
-    $(#myElement).text("Modified Text");
+    //$("#myElement").text("Modified Text");
 
     //jQuery equivalent of a – write your answer here
 
     // b
     // var paragraph = document.querySelector("#myDIV");
     // paragraph.classList.add("myStyle");
-    $(#myDIV).addclass("myStyle");
+    //$("#myDIV").addClass("myStyle");
 
     //jQuery equivalent of b – write your answer here
 
@@ -39,11 +40,15 @@
     // button.addEventListener("click", function() {
     //   alert("Button clicked!");
     // });
-    $("#myButton").click(function(
+    $("#myButton").click(function()
         {
             alert("Button clicked !");
+
+            $("#myElement").text("Modified Text");
+
+            $("#myDIV").addClass("myStyle");
         }
-    ));
+    );
 
     //jQuery equivalent of c – write your answer here
 
