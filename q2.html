@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON refering Github</h1>
+
+    <script>
+        const booksData = {
+            "Books" :
+            [
+                {
+                    "title":"The Great Gatsby",
+                    "author":"F. Scott Fitzgerald",
+                    "publicationYear":1925,
+                    "genres":["Fiction","Classics"]
+                },
+                {
+                    "title":"To Kill a Mockingbird",
+                    "author":"Harper Lee",
+                    "publicationYear":1960,
+                    "genres":["Fiction","Coming-of-Age"]
+                }
+            ]
+        };
+
+        console.log(booksData.Books[0].title);
+        console.log(booksData.Books[1].author);
+
+        booksData.Books.forEach(book => {
+            console.log(book.genres);
+        }
+        );
+    </script>
+</body>
+</html>
